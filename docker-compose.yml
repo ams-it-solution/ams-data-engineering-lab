@@ -19,8 +19,6 @@ services:
     networks:
       - airflow-net
 
-
-
   airflow-webserver:
     build:
       context: .
@@ -52,8 +50,6 @@ services:
     networks:
       - airflow-net
 
-
-
   airflow-scheduler:
     build:
       context: .
@@ -82,8 +78,6 @@ services:
     networks:
       - airflow-net
 
-
-
   airflow-init:
     build:
       context: .
@@ -111,8 +105,6 @@ services:
     networks:
       - airflow-net
 
-
-
   spark:
     build:
       context: ./spark
@@ -124,18 +116,17 @@ services:
 
     tty: true
 
+    env_file:
+      - .env
+
     volumes:
       - ./spark:/app
 
     networks:
       - airflow-net
 
-
-
 volumes:
   postgres_data:
-
-
 
 networks:
   airflow-net:
