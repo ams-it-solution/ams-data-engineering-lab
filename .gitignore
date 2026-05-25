@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.pyc
+
+# Airflow logs
+airflow/logs/
+
+# VSCode
+.vscode/
+
+# Environment
+.env
+
+# Mac/Linux
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Docker
+*.pid
+
+# Spark temporary
+spark-warehouse/
+
+# PostgreSQL data
+postgres_data/
+
+# Airflow temp
+airflow-webserver.pid
