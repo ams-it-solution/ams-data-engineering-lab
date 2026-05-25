@@ -44,4 +44,5 @@ result.write.format("jdbc").options(
     password=POSTGRES_PASSWORD
 ).mode("overwrite").save()
 
+
 spark.stop()
