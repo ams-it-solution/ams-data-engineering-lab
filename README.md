@@ -13,7 +13,7 @@ Airflow orchestrates Spark jobs executed inside a dedicated Spark container.
 
 Processed data can be stored in PostgreSQL.
 
-![Architecture](docs\data engineering arc.png)
+![Architecture](docs/data engineering arc.png)
 
 ## Stack
 
